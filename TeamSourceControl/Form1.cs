@@ -19,6 +19,11 @@ namespace TeamSourceControl
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            GetAllFirearms();
+        }
+
+        private void GetAllFirearms()
+        {
             List<Firearms> firearms = FirearmDb.GetFirearms();
 
             lstFirearms.DataSource = firearms;
