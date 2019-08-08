@@ -24,7 +24,7 @@ namespace TeamSourceControl
 
         private void GetAllFirearms()
         {
-            List<Firearms> firearms = FirearmDb.GetFirearms();
+            List<Firearms> firearms = FirearmDB.GetFirearms();
 
             lstFirearms.DataSource = firearms;
             lstFirearms.DisplayMember = nameof(Firearms.ModelName);

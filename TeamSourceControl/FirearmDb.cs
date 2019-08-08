@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TeamSourceControl
 {
-    static class FirearmDb
+    static class FirearmDB
     {
         /// <summary>
         /// Returns all Firearms registered in the database
