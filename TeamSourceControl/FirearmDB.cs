@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,7 +49,12 @@ namespace TeamSourceControl
         /// <param name="firearm"></param>
         public static void DeleteFirearm(Firearms firearm)
         {
-            throw new NotImplementedException();
+            using (var context = new SimpleGunShopDatabaseEntities())
+            {
+                context.Firearms.Add(firearm); // Track with EF
+                context.Entry(firearm).State = EntityState.Deleted; // Tell EF we are removing it
+                context.SaveChanges(); // Update on DB
+            }
         }
     }
 }
