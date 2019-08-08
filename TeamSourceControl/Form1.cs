@@ -16,5 +16,13 @@ namespace TeamSourceControl
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            List<Firearms> firearms = FirearmDb.GetFirearms();
+
+            lstFirearms.DataSource = firearms;
+            lstFirearms.DisplayMember = nameof(Firearms.ModelName);
+        }
     }
 }
