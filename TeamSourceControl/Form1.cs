@@ -35,6 +35,8 @@ namespace TeamSourceControl
             frmAddFirearm addFirearm = new frmAddFirearm();
             //Pulls up the new form after clicking on Add
             DialogResult result = addFirearm.ShowDialog();
+            //This will refresh the firearm list box upon each new addition.
+            GetAllFirearms();
         }
     }
 }
