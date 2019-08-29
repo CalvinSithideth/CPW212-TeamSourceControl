@@ -35,7 +35,13 @@ namespace TeamSourceControl
         /// <returns></returns>
         public static Firearms AddFirearm(Firearms firearm)
         {
-            throw new NotImplementedException();
+            using (var context = new SimpleGunShopDatabaseEntities())
+            {
+                context.Firearms.Add(firearm);
+                context.SaveChanges();
+                context.Entry(firearm).State = EntityState.Added; // Tell EF firearm has been added
+                return firearm;
+            }
         }
 
         /// <summary>
