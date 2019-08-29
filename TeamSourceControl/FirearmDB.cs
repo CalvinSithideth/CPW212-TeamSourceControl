@@ -39,6 +39,7 @@ namespace TeamSourceControl
             {
                 context.Firearms.Add(firearm);
                 context.SaveChanges();
+                context.Entry(firearm).State = EntityState.Added; // Tell EF firearm has been added
                 return firearm;
             }
         }
