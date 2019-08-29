@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TeamSourceControl
 {
-    public partial class formUpdateFirearm : Form
+    public partial class FrmUpdateFirearm : Form
     {
-        public formUpdateFirearm()
+        public FrmUpdateFirearm(Firearms f = null)
         {
             InitializeComponent();
         }

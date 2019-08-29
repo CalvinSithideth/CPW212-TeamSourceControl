@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace TeamSourceControl
 {
-    public partial class frmAddFirearm : Form
+    public partial class FrmAddFirearm : Form
     {
-        public frmAddFirearm()
+        public FrmAddFirearm()
         {
             InitializeComponent();
         }
