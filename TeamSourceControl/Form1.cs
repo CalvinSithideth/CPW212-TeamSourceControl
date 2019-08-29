@@ -27,7 +27,7 @@ namespace TeamSourceControl
             List<Firearms> firearms = FirearmDB.GetFirearms();
 
             lstFirearms.DataSource = firearms;
-            lstFirearms.DisplayMember = nameof(Firearms.ModelName);
+            lstFirearms.DisplayMember = nameof(Firearms.Manufacturer);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -35,6 +35,8 @@ namespace TeamSourceControl
             frmAddFirearm addFirearm = new frmAddFirearm();
             //Pulls up the new form after clicking on Add
             DialogResult result = addFirearm.ShowDialog();
+            //This will refresh the firearm list box upon each new addition.
+            GetAllFirearms();
         }
     }
 }
