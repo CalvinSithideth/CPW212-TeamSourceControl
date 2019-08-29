@@ -15,10 +15,7 @@ namespace TeamSourceControl
         /// <summary>
         /// Returns all Firearms registered in the database
         /// </summary>
-        /// <returns> 
-        /// All the firearms currently in the database in the textbox
-        ///  in ascending order by Manufacturer            
-        /// </returns>
+        /// <returns></returns>
         public static List<Firearms> GetFirearms()
         {
             //Creates the instance of the DB contexte
@@ -26,10 +23,10 @@ namespace TeamSourceControl
 
             using (SimpleGunShopDatabaseEntities context = new SimpleGunShopDatabaseEntities())
             {
+                //This should allow the list to be grouped by manufacturer rather than showing duplicates
+
                 //Using LINQ Method Syntax (returning all firearms in the database.
                 //List<Firearms> firearms = context.Firearms.ToList();
-
-                //Below Displays a all Manufacturer names of guns in the text box like a list
                 return context
                     .Firearms
                     .OrderBy(f => f.Manufacturer)
