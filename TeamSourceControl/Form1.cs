@@ -29,5 +29,12 @@ namespace TeamSourceControl
             lstFirearms.DataSource = firearms;
             lstFirearms.DisplayMember = nameof(Firearms.ModelName);
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmAddFirearm addFirearm = new frmAddFirearm();
+            //Pulls up the new form after clicking on Add
+            DialogResult result = addFirearm.ShowDialog();
+        }
     }
 }
