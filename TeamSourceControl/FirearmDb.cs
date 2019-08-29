@@ -19,12 +19,19 @@ namespace TeamSourceControl
         public static List<Firearms> GetFirearms()
         {
             //Creates the instance of the DB contexte
-            var db = new SimpleGunShopDatabaseEntities();
+            //var db = new SimpleGunShopDatabaseEntities();
 
-            //Using LINQ Method Syntax (returning all firearms in the database.
-            List<Firearms> firearms = db.Firearms.ToList();
+            using (SimpleGunShopDatabaseEntities context = new SimpleGunShopDatabaseEntities())
+            {
+                //This should allow the list to be grouped by manufacturer rather than showing duplicates
 
-            return firearms;
+                //Using LINQ Method Syntax (returning all firearms in the database.
+                //List<Firearms> firearms = context.Firearms.ToList();
+                return context
+                    .Firearms
+                    .OrderBy(f => f.Manufacturer)
+                    .ToList();
+            }
         }
 
         /// <summary>
