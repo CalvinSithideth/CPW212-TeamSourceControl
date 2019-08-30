@@ -35,6 +35,22 @@ namespace TeamSourceControl
         }
 
         /// <summary>
+        /// Returns a single Firearm from the database,
+        /// using the firearm's primary key
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public static Firearms GetSingleFirearm(int id)
+        {
+            using (SimpleGunShopDatabaseEntities context = new SimpleGunShopDatabaseEntities())
+            {
+                return context.Firearms
+                    .Where(gun => gun.FirearmID == id)
+                    .FirstOrDefault();
+            }
+        }
+
+        /// <summary>
         /// Adds a Firearm. Returns the newly added Firearm
         /// with the FirearmID populated
         /// </summary>
