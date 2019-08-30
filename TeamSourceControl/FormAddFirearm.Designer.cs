@@ -91,47 +91,47 @@
             this.txtSerialNumber.Location = new System.Drawing.Point(170, 70);
             this.txtSerialNumber.Name = "txtSerialNumber";
             this.txtSerialNumber.Size = new System.Drawing.Size(204, 20);
-            this.txtSerialNumber.TabIndex = 5;
+            this.txtSerialNumber.TabIndex = 0;
             // 
             // txtManufacturer
             // 
             this.txtManufacturer.Location = new System.Drawing.Point(170, 108);
             this.txtManufacturer.Name = "txtManufacturer";
             this.txtManufacturer.Size = new System.Drawing.Size(204, 20);
-            this.txtManufacturer.TabIndex = 6;
+            this.txtManufacturer.TabIndex = 1;
             // 
             // txtPrice
             // 
             this.txtPrice.Location = new System.Drawing.Point(170, 211);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(204, 20);
-            this.txtPrice.TabIndex = 7;
+            this.txtPrice.TabIndex = 4;
             // 
             // txtCaliper
             // 
             this.txtCaliper.Location = new System.Drawing.Point(170, 177);
             this.txtCaliper.Name = "txtCaliper";
             this.txtCaliper.Size = new System.Drawing.Size(204, 20);
-            this.txtCaliper.TabIndex = 8;
+            this.txtCaliper.TabIndex = 3;
             // 
             // txtModel
             // 
             this.txtModel.Location = new System.Drawing.Point(170, 142);
             this.txtModel.Name = "txtModel";
             this.txtModel.Size = new System.Drawing.Size(204, 20);
-            this.txtModel.TabIndex = 9;
+            this.txtModel.TabIndex = 2;
             // 
             // btnAddFirearm
             // 
             this.btnAddFirearm.Location = new System.Drawing.Point(170, 279);
             this.btnAddFirearm.Name = "btnAddFirearm";
             this.btnAddFirearm.Size = new System.Drawing.Size(116, 23);
-            this.btnAddFirearm.TabIndex = 10;
+            this.btnAddFirearm.TabIndex = 5;
             this.btnAddFirearm.Text = "Add Firearm";
             this.btnAddFirearm.UseVisualStyleBackColor = true;
             this.btnAddFirearm.Click += new System.EventHandler(this.btnAddFirearm_Click);
             // 
-            // frmAddFirearm
+            // FormAddFirearm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -147,7 +147,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "frmAddFirearm";
+            this.Name = "FormAddFirearm";
             this.Text = "frmAddFirearm";
             this.ResumeLayout(false);
             this.PerformLayout();
