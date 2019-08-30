@@ -65,17 +65,17 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="formUpdateFirearm.cs">
+    <Compile Include="FormUpdateFirearm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formUpdateFirearm.Designer.cs">
-      <DependentUpon>formUpdateFirearm.cs</DependentUpon>
+    <Compile Include="FormUpdateFirearm.Designer.cs">
+      <DependentUpon>FormUpdateFirearm.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAddFirearm.cs">
+    <Compile Include="FormAddFirearm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddFirearm.Designer.cs">
-      <DependentUpon>frmAddFirearm.cs</DependentUpon>
+    <Compile Include="FormAddFirearm.Designer.cs">
+      <DependentUpon>FormAddFirearm.cs</DependentUpon>
     </Compile>
     <Compile Include="GunShopModel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -97,8 +97,11 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAddFirearm.resx">
-      <DependentUpon>frmAddFirearm.cs</DependentUpon>
+    <EmbeddedResource Include="FormAddFirearm.resx">
+      <DependentUpon>FormAddFirearm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateFirearm.resx">
+      <DependentUpon>FormUpdateFirearm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

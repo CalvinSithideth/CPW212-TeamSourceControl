@@ -1,4 +1,6 @@
-﻿namespace TeamSourceControl
+﻿using System;
+
+namespace TeamSourceControl
 {
     partial class Form1
     {

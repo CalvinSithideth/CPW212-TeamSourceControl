@@ -32,11 +32,26 @@ namespace TeamSourceControl
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            frmAddFirearm addFirearm = new frmAddFirearm();
+            FormAddFirearm addFirearm = new FormAddFirearm();
             //Pulls up the new form after clicking on Add
             DialogResult result = addFirearm.ShowDialog();
             //This will refresh the firearm list box upon each new addition.
             GetAllFirearms();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            //Check firearm is selected
+            DisplayUpdateForm();
+            GetAllFirearms();
+        }
+
+        private void DisplayUpdateForm()
+        {
+            Firearms selectedFirearm = lstFirearms.SelectedItem as Firearms;
+            var updateForm = new FormUpdateFirearm(selectedFirearm);
+
+            updateForm.ShowDialog();
         }
     }
 }

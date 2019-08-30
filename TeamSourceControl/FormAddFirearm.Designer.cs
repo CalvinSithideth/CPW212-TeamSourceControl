@@ -1,6 +1,6 @@
 ﻿namespace TeamSourceControl
 {
-    partial class frmAddFirearm
+    partial class FormAddFirearm
     {
         /// <summary>
         /// Required designer variable.
