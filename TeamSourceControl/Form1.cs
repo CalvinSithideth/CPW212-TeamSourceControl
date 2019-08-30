@@ -41,7 +41,17 @@ namespace TeamSourceControl
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            //Check firearm is selected
+            DisplayUpdateForm();
+            GetAllFirearms();
+        }
 
+        private void DisplayUpdateForm()
+        {
+            Firearms selectedFirearm = lstFirearms.SelectedItem as Firearms;
+            var updateForm = new FormUpdateFirearm(selectedFirearm);
+
+            updateForm.ShowDialog();
         }
     }
 }

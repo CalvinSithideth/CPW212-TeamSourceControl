@@ -12,9 +12,14 @@ namespace TeamSourceControl
 {
     public partial class FormUpdateFirearm : Form
     {
-        public FormUpdateFirearm()
+        public FormUpdateFirearm(Firearms f = null)
         {
             InitializeComponent();
+        }
+
+        private void btnUpdateFirearm_Click(object sender, EventArgs e)
+        {
+         
         }
     }
 }
