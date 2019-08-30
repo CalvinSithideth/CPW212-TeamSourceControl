@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -34,7 +35,22 @@ namespace TeamSourceControl
 
         private void btnUpdateFirearm_Click(object sender, EventArgs e)
         {
+            Firearms gun = new Firearms();
 
+            try
+            {
+                //Keep the ID of the gun the same because we are UPDATING
+                gun.FirearmID = existingFirearm.FirearmID;
+                FirearmDB.UpdateFirearm(gun);
+                MessageBox.Show("Firearm has been updated!");
+                Close();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("There was an issue contacting the Database, please try agian");
+                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.GetType().ToString());
+            }
         }
     }
 }
