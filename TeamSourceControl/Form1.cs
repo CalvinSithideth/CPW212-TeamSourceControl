@@ -38,5 +38,10 @@ namespace TeamSourceControl
             //This will refresh the firearm list box upon each new addition.
             GetAllFirearms();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
