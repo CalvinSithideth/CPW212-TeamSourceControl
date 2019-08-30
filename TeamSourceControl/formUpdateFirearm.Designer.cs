@@ -41,7 +41,7 @@
             this.btnUpdateFirearm.Location = new System.Drawing.Point(153, 253);
             this.btnUpdateFirearm.Name = "btnUpdateFirearm";
             this.btnUpdateFirearm.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdateFirearm.TabIndex = 0;
+            this.btnUpdateFirearm.TabIndex = 5;
             this.btnUpdateFirearm.Text = "Update";
             this.btnUpdateFirearm.UseVisualStyleBackColor = true;
             this.btnUpdateFirearm.Click += new System.EventHandler(this.btnUpdateFirearm_Click);
@@ -51,35 +51,35 @@
             this.txtUpdateSerialNum.Location = new System.Drawing.Point(116, 91);
             this.txtUpdateSerialNum.Name = "txtUpdateSerialNum";
             this.txtUpdateSerialNum.Size = new System.Drawing.Size(178, 20);
-            this.txtUpdateSerialNum.TabIndex = 1;
+            this.txtUpdateSerialNum.TabIndex = 0;
             // 
             // txtUpdateManufacturer
             // 
             this.txtUpdateManufacturer.Location = new System.Drawing.Point(116, 117);
             this.txtUpdateManufacturer.Name = "txtUpdateManufacturer";
             this.txtUpdateManufacturer.Size = new System.Drawing.Size(178, 20);
-            this.txtUpdateManufacturer.TabIndex = 2;
+            this.txtUpdateManufacturer.TabIndex = 1;
             // 
             // txtUpdateModel
             // 
             this.txtUpdateModel.Location = new System.Drawing.Point(116, 143);
             this.txtUpdateModel.Name = "txtUpdateModel";
             this.txtUpdateModel.Size = new System.Drawing.Size(178, 20);
-            this.txtUpdateModel.TabIndex = 3;
+            this.txtUpdateModel.TabIndex = 2;
             // 
             // txtUpdateCaliber
             // 
             this.txtUpdateCaliber.Location = new System.Drawing.Point(116, 169);
             this.txtUpdateCaliber.Name = "txtUpdateCaliber";
             this.txtUpdateCaliber.Size = new System.Drawing.Size(178, 20);
-            this.txtUpdateCaliber.TabIndex = 4;
+            this.txtUpdateCaliber.TabIndex = 3;
             // 
             // txtUpdatePrice
             // 
             this.txtUpdatePrice.Location = new System.Drawing.Point(116, 195);
             this.txtUpdatePrice.Name = "txtUpdatePrice";
             this.txtUpdatePrice.Size = new System.Drawing.Size(178, 20);
-            this.txtUpdatePrice.TabIndex = 5;
+            this.txtUpdatePrice.TabIndex = 4;
             // 
             // FormUpdateFirearm
             // 
